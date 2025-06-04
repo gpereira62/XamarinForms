@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinFormsApp.MainPage">
+    <StackLayout Padding="20" Spacing="20">
+        <Label Text="Welcome to Xamarin.Forms!" 
+               FontSize="Large"
+               HorizontalOptions="Center" />
+        
+        <Entry x:Name="NameEntry" 
+               Placeholder="Enter your name" />
+        
+        <Button x:Name="GreetButton" 
+                Text="Greet Me"
+                Clicked="OnGreetButtonClicked" />
+        
+        <Label x:Name="GreetingLabel" 
+               FontSize="Medium"
+               HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>
